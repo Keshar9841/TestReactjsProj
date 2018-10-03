@@ -23,7 +23,7 @@ import './index.css';
 function formatDate(date) {
     return date.toLocaleDateString();
   }
-  
+
   function Comment(props) {
     return (
       <div className="Comment">
@@ -40,7 +40,7 @@ function formatDate(date) {
       </div>
     );
   }
-  
+
   const comment = {
     date: new Date(),
     text: 'I hope you enjoy learning React!',
@@ -49,12 +49,6 @@ function formatDate(date) {
       avatarUrl: ['http://placekitten.com/g/64/64'],
     },{
         name: 'Hello Kitty1',
-        avatarUrl: ['http://placekitten.com/g/64/64'],
-      },{
-        name: 'Hello Kitty2',
-        avatarUrl: ['http://placekitten.com/g/64/64'],
-      },{
-        name: 'Hello Kitty3',
         avatarUrl: ['http://placekitten.com/g/64/64'],
       }],
   };
@@ -71,7 +65,7 @@ function formatDate(date) {
 
     return list;
   }
-  
+
   ReactDOM.render(
     <Comment
       date={comment.date}
@@ -80,6 +74,3 @@ function formatDate(date) {
     />,
     document.getElementById('root')
   );
-  
-
-
